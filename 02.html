@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Animation</title>
+    <script>
+        window.onload = function () {
+            var count = 0;
+            var img = document.getElementById('image');
+            var frames = ['1.PNG','2.PNG','3.PNG','4.PNG', '5.PNG', '6.PNG', '7.PNG', '8.PNG'];
+
+            setInterval(function () {
+                img.src = "img/"+frames[count++ % frames.length];
+            }, 1000/frames.length);
+        }
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>
