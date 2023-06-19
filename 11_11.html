@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <div class="drawer">
+        <h1>Logo</h1>
+        <div class="drawer-menu">
+            <p>Esse pariatur</p>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Lorem ipsum</h1>
+        <p>Magna et....</p>
+        <p>Magna et....</p>
+        <p>Magna et....</p>
+        <p>Magna et....</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $('body').click(function (){
+            $('.drawer-menu').slideToggle("slow")
+        })
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 10px 0;
+        }
+        .drawer {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: red;
+        }
+        .drawer-menu{
+            display: none;
+        }
+        .content{
+            padding: 10px;
+            padding-top: 60px;
+        }
+    </style>
+</body>
+</html>
